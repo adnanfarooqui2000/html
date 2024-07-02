@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  onload="generate()" align="center">
+    <div id="show"></div>
+    <button onclick="generate()">GENERATE OTP</button>
+   <script>
+    function generate(){
+    let str ='ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz';
+    let finaloutput ='';
+    for(let q = 0;q<6;q++){
+    let random =Math.random();
+    let aftermultliply =str.length * random;
+    let afterfloor = Math.floor(aftermultliply);
+    let output = str.charAt(afterfloor);
+    finaloutput = finaloutput + output
+    }
+    document.querySelector('#show').innerHTML = finaloutput
+}
+   </script> 
+</body>
+</html>

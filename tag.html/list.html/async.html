@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="btn">Click</button>
+    <script>
+    // // const btn=document.querySelector('#btn');
+    // btn.addEventListener('click ')
+    // const Show=async()=>{
+    //     let d=await fetch ("https://jsonplaceholder.typicode.com/photos");
+    //     let response=await d.json();
+    //     console.log(response);
+    // }
+    
+    const btn=document.querySelector('#btn');
+     const Show=async()=>{
+        let d=await fetch ("https:jsonplaceholder.typicode.com/todos");
+        let response=await d.json();
+
+        let fil=response.filter(e=>e.completed===false)
+         console.log(fil);
+     } 
+      btn.addEventListener('click 'Show)
+   </script> 
+</body>
+</html>

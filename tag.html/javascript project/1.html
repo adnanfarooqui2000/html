@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+
+    <button>Click</button>
+    <ul>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+        <li><a href="#">DashBoard</a></li>
+    </ul>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit ipsam, illo sunt incidunt voluptatibus. A velit tempore est aut esse asperiores totam dicta vitae neque. Dolorem, optio! Odio, nostrum!</div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ipsum minus quibusdam unde quia ut reprehenderit voluptates beatae veritatis sint veniam delectus, provident, earum vero nesciunt placeat. Quisquam, laboriosam repudiandae!</p>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+    $('button').click(function(){
+        $('ul').slideToggle()
+    })
+})
+
+        $(document).ready(function(){
+            $('div').mouseenter(function(){
+                $('p').css({
+                    'backgroundColor':'red'
+                })
+            })
+        })
+        $(document).ready(function(){
+            $('div').click(function(){
+                $('p').fadeOut
+            })
+        })
+    </script>
+</body>
+</html>

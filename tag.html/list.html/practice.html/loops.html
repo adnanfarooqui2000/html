@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="getnumber">
+    <button id="table"> generate table  </button>
+    <div id="show">
+
+    </div>
+    <script>
+let s='';
+let store=document.querySelector('#table');
+store.addEventListener('click',()=>{
+       let tablenumber= parseInt(document.querySelector('#getnumber').value);
+       for(let q=1;q<11;q++){
+        s=s+tablenumber*q+"<br>";
+        document.querySelector('#show').innerHTML = s;
+    }
+    s='';
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./run time out .css">
+    <style>
+       #imm{
+        height: 700px;
+        width: 700px;
+        border-radius: 50%;
+        animation: imm 3s 2normal;
+       } 
+       #hq{
+        display: none;
+       }
+       @keyframes imm{
+        0%{
+            margin-top: 100px;
+        }
+        20%{
+            margin-top: 250px;
+        }
+        40%{
+            margin-top: 100px;
+        }
+        60%{
+            margin-top: 250px;
+        }
+        80%{
+            margin-top: 100px;
+        }
+        100%{
+            margin-top: 250px;
+        }
+       }
+       #model{
+        width: 500px;
+       }
+    </style>
+    <script>
+        function show(){
+            setTimeout(run_loader,3000);
+            setTimeout(model,10000)
+            document.querySelector('#imm').style.display="none";
+            document.querySelector('#hq').style.display="block"  
+        }
+        setTimeout(model,10000);
+        let s= <div id="model">
+            <button onclick="hidemodel()"> X</button>
+            <input type="text" placeholder="enter your name" >
+            </div>
+            document.querySelector('#showmodel').innerHTML = s;
+            function hidemodel(){
+                document.querySelector('#showmodel').innerHTML="";
+            }
+    </script>
+</head>
+<body onload="show()">
+ <center><img src="https://static.vecteezy.com/system/resources/thumbnails/011/473/510/small/phoenix-logo-design-creative-logo-of-mythological-bird-free-vector.jpg"  id="imm"></center>
+    <section id="hq">
+
+    </section>
+</body>
+</html>

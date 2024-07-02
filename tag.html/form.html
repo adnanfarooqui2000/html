@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"],
+        input[type="password"],
+        button{
+            width: 400px;
+            font-size: 20px;
+            margin: 20px 20px 0px 20px;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+<input type="text" onfocus="hidevalidation('nm')" id="name" placeholder="enter your nmae"><br>
+<div style="height: 15px;" id="error_name"></div>
+<input type="text" id="email" onfocus="hidevalidation('em')" placeholder="enter yuor email"><br>
+<div style="height: 15px;"id="error_email"></div>
+<input type="number" id="mobile" placeholder="enter mobile number"><br>
+<input type="password" id="password" placeholder="enter password"><br>
+<input type="password" id="cpassword" placeholder="enter confirm password">
+        </form>
+    </center>
+    <script src="form.js"></script>
+
+</body>
+</html>

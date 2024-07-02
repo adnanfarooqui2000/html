@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#output::after{
+    content: "_|";
+}
+#output{
+    background-color: chartreuse;
+    text-decoration: double;
+ 
+}
+    </style>
+    <script>
+        let w=" I AM A WEB DEVELOPER "
+        let len=w.length;
+        console.log(len);
+        let c=0;
+        let s=''
+        function run(){
+            setInterval(typewriter,100)
+            function typewriter(){
+                if(len>c){
+          s=s+w[c]
+          document.querySelector('#output').innerHTML=s;
+          c++
+           }
+           else{
+            s='';
+            c=0;
+           } 
+                  }
+        }
+    </script>
+</head>
+<body onload="run()"> 
+    <h1 id="output"></h1>
+</body>
+</html>
